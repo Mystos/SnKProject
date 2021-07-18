@@ -71,7 +71,10 @@ public class PlayerControllerRb : NetworkBehaviour
         if (IsLocalPlayer)
         {
             isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight / 2 + 0.1f);
-            moveDirection = transform.forward * movementInput.y + transform.right * movementInput.x;
+
+
+            moveDirection = movementInput.y * transform.forward + movementInput.x * transform.right;
+            Debug.Log(moveDirection);
             rb.drag = isGrounded ? groundDrag : airDrag;
 
             if (playerControls.Gameplay.Jump.triggered && isGrounded)

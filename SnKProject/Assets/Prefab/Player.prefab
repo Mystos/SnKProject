@@ -1201,6 +1201,8 @@ GameObject:
   - component: {fileID: 190618409}
   - component: {fileID: -2452792197164614685}
   - component: {fileID: 1733730585}
+  - component: {fileID: 5029360634677319266}
+  - component: {fileID: -8707701251893975915}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1338,3 +1340,33 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8415484975577712999}
   m_Enabled: 1
+--- !u!114 &5029360634677319266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8415484975577712999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05b8c21ae8dd924b92641e7a4acaad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1431547608}
+  grappleSpeed: 2
+  grappleStrengh: 10
+  grappleDistance: 25
+--- !u!136 &-8707701251893975915
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8415484975577712999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
